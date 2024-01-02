@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans Hebrew", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: right;
+}
+.container_fluid {
+  @apply max-w-full 2xl:max-w-[1440px] mx-3 sm:mx-5 lg:mx-10 xl:mx-[160px] 2xl:mx-auto;
+}
+
+h2 {
+  @apply text-[32px] sm:text-[36px] md:text-[42px] lg:text-[52px] xl:text-[62px];
+}
